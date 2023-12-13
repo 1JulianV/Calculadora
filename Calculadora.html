@@ -2,87 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
-  <link href="estilos.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <table>
+    <form name="calculador">
   <thead>
     <tr>
       <th>
-        <input type="text">
+        <input class="salida" type="textfield" name="respuesta" value="" autocomplete="off" readonly>
       </th>
     </tr>
   </thead>
         <tbody>
             <tr>
                 <td>
-                    <button>7</button>
+                    <input class="botones" type="button" value="7" onclick="document.calculador.respuesta.value+='7'">
                 </td>
                 <td>
-                    <button>8</button>
+                    <input class="botones" type="button" value="8" onclick="document.calculador.respuesta.value+='8'">
                 </td>
                 <td>
-                    <button>9</button>
+                    <input class="botones" type="button" value="9"onclick="document.calculador.respuesta.value+='9'">
                 </td>
                 <td>
-                    <button>BORRAR</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button>4</button>
-                </td>
-                <td>
-                    <button>5</button>
-                </td>
-                <td>
-                    <button>6</button>
-                </td>
-                <td>
-                    <button>+</button>
+                    <input class="botones" type="reset" value="DEL">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button>3</button>
+                    <input class="botones" type="button" value="4" onclick="document.calculador.respuesta.value+='4'">
                 </td>
                 <td>
-                    <button>2</button>
+                    <input class="botones" type="button" value="5" onclick="document.calculador.respuesta.value+='5'">
                 </td>
                 <td>
-                    <button>1</button>
+                    <input class="botones" type="button" value="6" onclick="document.calculador.respuesta.value+='6'">
                 </td>
                 <td>
-                    <button>-</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button>.</button>
-                </td>
-                <td>
-                    <button>0</button>
-                </td>
-                <td>
-                    <button>/</button>
-                </td>
-                <td>
-                    <button>*</button>
+                    <input class="botones" type="button" value="+" onclick="document.calculador.respuesta.value+='+'">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button>LIMPIAR</button>
+                    <input class="botones" type="button" value="3" onclick="document.calculador.respuesta.value+='3'">
                 </td>
                 <td>
-                    <button>=</button>
+                    <input class="botones" type="button" value="2" onclick="document.calculador.respuesta.value+='2'">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="1" onclick="document.calculador.respuesta.value+='1'">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="-" onclick="document.calculador.respuesta.value+='-'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="botones" type="button" value="." onclick="document.calculador.respuesta.value+='.'">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="0" onclick="document.calculador.respuesta.value+='0'">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="/" onclick="document.calculador.respuesta.value+='/'">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="X" onclick="document.calculador.respuesta.value+='*'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="botones" type="reset" value="C">
+                </td>
+                <td>
+                    <input class="botones" type="button" value="=" onclick="document.calculador.respuesta.value = eval(document.calculador.respuesta.value)">
                 </td>
             </tr>
         </tbody>
     </table>
+</form>
     </body>
 </html>
 <script>
-
+/* 
+HACER QUE FUNCIONE EL BOTON DEL
+ARREGLAR EL INPUT DE SALIDA
+ALARGAR EL INPUT DE SALIDA
+AGREGAR UN LIMITE DE NUMEROS
+REDONDEAR LOS BOTONES 
+MEJORAR LOS COLORES
+AGREGAR UN FONDO 
+AGREGAR FUNCIONES EN JS 
+CAMBIAR LA TIPOGRAFIA DE LOS NUMEROS
+*/
 </script>
