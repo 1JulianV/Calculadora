@@ -7,8 +7,8 @@
   <link type="text/css" rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<table>
     <form name="calculador">
+<table>
   <thead>
     <tr>
       <th>
@@ -28,7 +28,7 @@
                     <input class="botones" type="button" value="9"onclick="document.calculador.respuesta.value+='9'">
                 </td>
                 <td>
-                    <input class="botones" type="reset" value="DEL">
+                    <input class="botones" type="button" value="DEL" onclick="del()">
                 </td>
             </tr>
             <tr>
@@ -87,15 +87,21 @@
     </body>
 </html>
 <script>
+    let salida = document.querySelector(".salida")
+    function del(){
+        let valor = salida.value
+        if(valor.length > 0){
+            valor = valor.split("")
+                valor.pop()
+                valor = valor.join("")
+                salida.value = valor
+        }
+    }
 /* 
-HACER QUE FUNCIONE EL BOTON DEL
 ARREGLAR EL INPUT DE SALIDA
-ALARGAR EL INPUT DE SALIDA
 AGREGAR UN LIMITE DE NUMEROS
-REDONDEAR LOS BOTONES 
 MEJORAR LOS COLORES
-AGREGAR UN FONDO 
-AGREGAR FUNCIONES EN JS 
 CAMBIAR LA TIPOGRAFIA DE LOS NUMEROS
+AGREGAR UN ERROR AL COMBINAR MAS DE UN SIGNO O UN PUNTO SEGUIDO
 */
 </script>

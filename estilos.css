@@ -1,10 +1,10 @@
 table {
     width: 300px; 
     margin: 20px auto; 
-    background-color: rgb(104, 117, 235);
+    background-color: black;
     border: 10px solid;
     border-radius: 20px;
-    border-color: rgb(84, 48, 247);
+    border-color: rgb(31, 31, 31);
 }
 
 td {
@@ -17,7 +17,7 @@ th {
 
 .botones {
     color: rgb(255, 255, 255);
-    background-color: rgb(83, 136, 250);
+    background-color: rgb(253, 162, 59);
     width: 80px;
     padding: 15px;
     box-sizing: border-box; 
@@ -25,11 +25,14 @@ th {
     border-radius: 30px;
 }
 .salida {
-    width: 100%;
+    color: white;
+    background-color: black;
+    width: 400%;
     padding: 15px;
     box-sizing: border-box;
     margin: 5px;
     border: 2px solid;
     border-radius: 10px;
+    
   
 }
